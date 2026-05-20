@@ -1,9 +1,9 @@
 from flask import Flask, request, jsonify, render_template_string
 import requests
-
+import os
 app = Flask(__name__)
 
-API_KEY = "your-groq-api-key-here"
+API_KEY = os.environ.get("GROQ-API-KEY-")
 
 HTML = """
 <!DOCTYPE html>
