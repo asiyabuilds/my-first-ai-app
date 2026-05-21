@@ -3,7 +3,7 @@ import requests
 import os
 app = Flask(__name__)
 
-API_KEY = os.environ.get("GROQ-API-KEY-")
+API_KEY = os.environ.get("GROQ_API_KEY")
 
 HTML = """
 <!DOCTYPE html>
